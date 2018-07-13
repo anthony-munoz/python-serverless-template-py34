@@ -1,4 +1,10 @@
 {
     "app_name": "example-project",
-    "project_short_description": "Describe your App Here"
+    "project_short_description": "Describe your App Here",
+    "azure_resource_group": "azure_resource_group",
+    "azure_resource_location": "azure_resource_location",
+    "azure_service_plan": "azure_service_plan",
+    "azure_username": "azure_username",
+    "azure_password": "azure_password",
+    "python_version": "python_version",
 }
