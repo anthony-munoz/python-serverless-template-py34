@@ -12,7 +12,7 @@ from app.rest.analytics.serializers import stats_serializer
 from app.analytics.analytics import AnalyticsController
 
 log = logging.getLogger(__name__)
-ns = api.namespace('Analytics', description='Get statistics users information in your notifiCRM account')
+ns = api.namespace('{{cookiecutter.app_name}}', description='Get statistics users information in your notifiCRM account')
 
 
 @ns.route('/get_user_information')
