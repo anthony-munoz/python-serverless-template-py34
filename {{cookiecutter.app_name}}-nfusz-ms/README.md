@@ -5,7 +5,54 @@ Describe your App Here
 
 Getting Started
 
+cookiecutter {{http git url}}
 
+- Install azure cli on your local enviroment to make easy initial setup
+- After install cli azure, run command
+
+az login
+
+- then sign in with your credentials account in window browser that automatically open after run before command
+- you should see something like a json config with your status microsoft account
+- Next steps are when you can deploy your application
+- Create a deployment user
+
+az webapp deployment user set --user-name <username> --password <password> 
+
+Example 
+
+az webapp deployment user set --user-name toni5705_test --password toni5705_testM 
+
+- Create a resource group
+
+
+az group create --name toniResourceGroup --location "West Europe"
+
+- Create an Azure App Service plan
+
+az appservice plan create --name toniAppServicePlan --resource-group toniResourceGroup --sku FREE
+
+- Create a web app
+
+az webapp create --resource-group toniResourceGroup --plan toniAppServicePlan --name toniApp --runtime "python|3.4" --deployment-local-git
+
+- Create a git remote app
+
+git init 
+
+
+git remote add azure <git url given that before step> 
+
+
+git add .
+
+
+git commit -m "Initial commit"
+
+
+- Push to Azure git with auto deploy your app
+
+git push azure master
 
 # Python Flask app on Azure App Service Web
 
