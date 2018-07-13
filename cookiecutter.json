@@ -1,4 +1,11 @@
 {
     "app_name": "example-project",
-    "project_short_description": "Describe your App Here"
+    "project_short_description": "Describe your App Here",
+    "azure_resource_group": "azure_resource_group_toni5705",
+    "azure_resource_location": "West Europe",
+    "azure_service_plan": "azure_service_plan_toni5705",
+    "azure_username": "toni5705",
+    "azure_password": "toni5705_M",
+    "azure_app_name": "toni5705_app",
+    "python_version": "3.4"
 }
