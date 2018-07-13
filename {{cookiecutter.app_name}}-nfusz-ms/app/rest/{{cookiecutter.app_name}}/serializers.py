@@ -13,6 +13,6 @@ context_example = {
     }
 
 
-stats_serializer = api.model('Resource', {
-    'user': fields.String(required=True, description='client user ID', example="12"),
+{{cookiecutter.app_name}}_serializer = api.model('Resource', {
+    'variable': fields.String(required=True, description='dummy description', example="Hi world"),
 })
