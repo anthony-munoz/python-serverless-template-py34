@@ -2,10 +2,10 @@ azure-login:
 	az login
 
 azure-configure:
-	az webapp deployment user set --user-name {{azure_username}} --password {{azure_password}} 
-	az group create --name {{azure_resource_group}} --location {{azure_resource_location}}
-	az appservice plan create --name {{azure_service_plan}} --resource-group {{azure_resource_group}} --sku FREE
-	az webapp create --resource-group {{azure_resource_group}} --plan {{azure_service_plan}} --name {{azure_app_name}} --runtime "python|{{python_version}}" --deployment-local-git
+	az webapp deployment user set --user-name {{cookiecutter.azure_username}} --password {{cookiecutter.azure_password}} 
+	az group create --name {{cookiecutter.azure_resource_group}} --location {{cookiecutter.azure_resource_location}}
+	az appservice plan create --name {{cookiecutter.azure_service_plan}} --resource-group {{cookiecutter.azure_resource_group}} --sku FREE
+	az webapp create --resource-group {{cookiecutter.azure_resource_group}} --plan {{cookiecutter.azure_service_plan}} --name {{cookiecutter.azure_app_name}} --runtime "python|{{cookiecutter.python_version}}" --deployment-local-git
 
 azure-remote-repo:
 
