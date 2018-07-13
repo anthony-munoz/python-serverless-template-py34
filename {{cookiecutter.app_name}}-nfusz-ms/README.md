@@ -5,7 +5,7 @@ Describe your App Here
 
 Getting Started
 
-cookiecutter {{http git url}}
+cookiecutter <git url project>
 
 - Install azure cli on your local enviroment to make easy initial setup
 - After install cli azure, run command
