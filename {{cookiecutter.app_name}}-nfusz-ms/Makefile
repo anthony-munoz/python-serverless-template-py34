@@ -1,6 +1,3 @@
-
-
-
 azure-login:
 	az login
 
