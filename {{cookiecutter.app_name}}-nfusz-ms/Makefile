@@ -39,5 +39,7 @@ deploy:
  
 setup:
 	azure-login azure-configure azure-remote-repo init
+run-local:
+	/usr/bin/python main.py
 run:
 	deploy
